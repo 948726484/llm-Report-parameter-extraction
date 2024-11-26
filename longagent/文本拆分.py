@@ -60,7 +60,7 @@ for root, dirs, files in os.walk(wenben_gir):
                     for i,juhe in enumerate(juhe_list):
                         promt_juhe+=f"文档{i+1}：{juhe[0]}"
                         promt_juhe+="\n\n"
-                    promt_juhe+=f"""上述内容是一个风电项目报告，请基于上述文本，构建全局语义信息，你的摘要应围绕风电场信息或项目信息展开，说明关键属性：{enter_type}，此外文本中可能存在多个方案比对，但最后可能仅选择了其中的一样或两样，你需要说明多个方案的内容和最终选择的方案。
+                    promt_juhe+=f"""上述内容是一个风电项目报告，请基于上述文本，构建全局语义信息，你的摘要应围绕风电场信息或项目信息展开，说明关键信息：{enter_type}的属性值。
                 摘要："""
                     quanwen_response=chat_deepseek(promt_juhe)
                     # pattern = r'```json([\s\S]*?)```'

@@ -77,7 +77,7 @@ def process_file(file_path):
 摘要：
 """
         quanwen_response = chat_deepseek(promt_juhe)
-        print(enter_type)
+        print(wendang_shuxing)
         print(quanwen_response)
         print("------------------------------")
 
