@@ -3,7 +3,7 @@ import os
 import re
 import concurrent.futures
 
-from chouqu import chat_deepseek, chat_glm4
+from api import chat_deepseek, chat_glm4
 from config import chouqu_canshu
 
 wenben_gir = "../为拆分后的文本添加标注"
